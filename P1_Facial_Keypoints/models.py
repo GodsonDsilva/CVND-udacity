@@ -118,7 +118,7 @@ class Net(nn.Module):
         x = self.fc_drop(x)
 
         # output layer
-        x = F.relu(self.out(x))
+        x = self.out(x)
 
         return x
        
